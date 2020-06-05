@@ -2,7 +2,7 @@ second = 1000000
 
 cmds = {
     "varstore create st",
-    "startnode n1 --db-enabled=false --http-port=9650 --log-level=verbo",
+    "startnode n1 --db-enabled=false --http-port=9850 --log-level=verbo",
     "callrpc n1 ext/admin admin.getNetworkID {} st nid",
     "procmanager remove n1"
 }

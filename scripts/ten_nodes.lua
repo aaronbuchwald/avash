@@ -4,8 +4,8 @@ nodeprefix = "a"
 
 -- Deploys 10 nodes: a1 -> a10 
 cmds = {
-    "startnode " .. nodeprefix .. "1 --db-enabled=false --api-ipcs-enabled=true --http-port=9650 --staking-port=9150 --log-level=verbo --bootstrap-ips=",
-    "startnode " .. nodeprefix .. "2 --db-enabled=false --api-ipcs-enabled=false --http-port=9651 --staking-port=9151 --log-level=verbo --bootstrap-ips=127.0.0.1:9150",
+    "startnode " .. nodeprefix .. "1 --db-enabled=false --api-ipcs-enabled=true --http-port=9850 --staking-port=9150 --log-level=verbo --bootstrap-ips=",
+    "startnode " .. nodeprefix .. "2 --db-enabled=false --api-ipcs-enabled=false --http-port=9851 --staking-port=9151 --log-level=verbo --bootstrap-ips=127.0.0.1:9150",
     "startnode " .. nodeprefix .. "3 --db-enabled=false --api-ipcs-enabled=false --http-port=9652 --staking-port=9152 --log-level=verbo --bootstrap-ips=127.0.0.1:9150,127.0.0.1:9151",
 }
 
