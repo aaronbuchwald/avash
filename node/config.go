@@ -7,66 +7,67 @@ import (
 // Flags represents available CLI flags when starting a node
 type Flags struct {
 	// Avash metadata
-    ClientLocation               string
-    Meta                         string
-	DataDir                      string
-	
+	ClientLocation string
+	Meta           string
+	DataDir        string
+
 	// Assertions
-	AssertionsEnabled            bool
+	AssertionsEnabled bool
 
 	// TX fees
-	AvaTxFee                     uint
+	AvaTxFee uint
 
 	// IP
-	PublicIP                     string
+	PublicIP string
 
 	// Network ID
-	NetworkID                    string
+	NetworkID string
 
 	// Throughput
-	XputServerPort               uint
-	XputServerEnabled            bool
+	XputServerPort    uint
+	XputServerEnabled bool
 
 	// Crypto
 	SignatureVerificationEnabled bool
+	NetworkTLSEnabled            bool
 
 	// APIs
-	APIAdminEnabled              bool
-	APIIPCsEnabled               bool
-	APIKeystoreEnabled           bool
-	APIMetricsEnabled            bool
+	APIAdminEnabled    bool
+	APIIPCsEnabled     bool
+	APIKeystoreEnabled bool
+	APIMetricsEnabled  bool
 
 	// HTTP
-	HTTPPort                     uint
-	HTTPTLSEnabled               bool
-	HTTPTLSCertFile              string
-	HTTPTLSKeyFile               string
+	HTTPPort        uint
+	HTTPTLSEnabled  bool
+	HTTPTLSCertFile string
+	HTTPTLSKeyFile  string
 
 	// Bootstrapping
-	BootstrapIPs                 string
-	BootstrapIDs                 string
+	BootstrapIPs string
+	BootstrapIDs string
 
 	// Database
-	DBEnabled                    bool
-	DBDir                        string
+	DBEnabled bool
+	DBDir     string
 
 	// Logging
-	LogLevel                     string
-	LogDir                       string
+	LogLevel string
+	LogDir   string
 
 	// Consensus
-	SnowAvalancheBatchSize       int
-	SnowAvalancheNumParents      int
-	SnowSampleSize               int
-	SnowQuorumSize               int
-	SnowVirtuousCommitThreshold  int
-	SnowRogueCommitThreshold     int
+	SnowAvalancheBatchSize      int
+	SnowAvalancheNumParents     int
+	SnowSampleSize              int
+	SnowQuorumSize              int
+	SnowVirtuousCommitThreshold int
+	SnowRogueCommitThreshold    int
 
 	// Staking
-	StakingTLSEnabled            bool
-	StakingPort                  uint
-	StakingTLSKeyFile            string
-	StakingTLSCertFile           string
+	StakingTLSEnabled  bool
+	StakingPort        uint
+	StakingTLSKeyFile  string
+	StakingTLSCertFile string
 }
 
 // SetDefaults sets any zero-value field to its default value
@@ -84,9 +85,9 @@ func (flags *Flags) SetDefaults() {
 // DefaultFlags returns Avash-specific default node flags
 func DefaultFlags() Flags {
 	return Flags{
-        ClientLocation:               "",
-        Meta:                         "",
-        DataDir:                      "",
+		ClientLocation:               "",
+		Meta:                         "",
+		DataDir:                      "",
 		AssertionsEnabled:            true,
 		AvaTxFee:                     0,
 		PublicIP:                     "127.0.0.1",
@@ -95,7 +96,7 @@ func DefaultFlags() Flags {
 		XputServerEnabled:            false,
 		SignatureVerificationEnabled: true,
 		APIAdminEnabled:              true,
-		APIIPCsEnabled:			      true,
+		APIIPCsEnabled:               true,
 		APIKeystoreEnabled:           true,
 		APIMetricsEnabled:            true,
 		HTTPPort:                     9850,
@@ -114,9 +115,10 @@ func DefaultFlags() Flags {
 		SnowQuorumSize:               2,
 		SnowVirtuousCommitThreshold:  5,
 		SnowRogueCommitThreshold:     10,
+		NetworkTLSEnabled:            true,
 		StakingTLSEnabled:            false,
 		StakingPort:                  9851,
-        StakingTLSKeyFile:            "",
+		StakingTLSKeyFile:            "",
 		StakingTLSCertFile:           "",
 	}
 }
