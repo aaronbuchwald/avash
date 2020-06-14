@@ -10,9 +10,3 @@ for key, cmd in ipairs(cmds) do
     print("calling " .. cmd)
     avash_call(cmd)
 end
-
-
-MFrZFVCXPv5iCn6M9K6XduxGTYp891xXZ
-NFBbbJ4qCmNaCzeW7sxErhvWqvEQMnYcN
-GWPcbFJZFfZreETSoWjPimr846mXEKCtu
-P7oB2McjBGgW2NXXWVYjV8JEDFoW9xDE5
