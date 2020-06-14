@@ -19,7 +19,7 @@ cmds_template = {
 }
 
 -- Add empty string into cmds_template because table.concat does not append to last element
-cmds_template.insert(cmds_template, "")
+table.insert(cmds_template, "")
 
 for i=4, 10 do
     iminus1 = i - 1
