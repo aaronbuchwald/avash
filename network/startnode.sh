@@ -8,7 +8,7 @@ CTNR_DIR="/data"
 NAME=""
 
 # Required flag defaults
-H_PORT="9850"
+H_PORT="9650"
 S_PORT="9851"
 
 # Process flags

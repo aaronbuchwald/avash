@@ -99,7 +99,7 @@ func DefaultFlags() Flags {
 		APIIPCsEnabled:               true,
 		APIKeystoreEnabled:           true,
 		APIMetricsEnabled:            true,
-		HTTPPort:                     9850,
+		HTTPPort:                     9650,
 		HTTPTLSEnabled:               false,
 		HTTPTLSCertFile:              "",
 		HTTPTLSKeyFile:               "",

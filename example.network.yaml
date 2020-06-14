@@ -4,7 +4,7 @@ hosts:
    nodes:
     - name: n1
       flags:
-       httpport: 9850
+       httpport: 9650
        stakingport: 9851
        xputserverport: 9652
     - name: n2
@@ -17,7 +17,7 @@ hosts:
    nodes:
     - name: n1
       flags:
-       httpport: 9850
+       httpport: 9650
        stakingport: 9851
        xputserverport: 9652
     - name: n2
