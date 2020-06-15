@@ -153,7 +153,7 @@ func DefaultFlags() Flags {
 		APIIPCsEnabled:               true,
 		APIKeystoreEnabled:           true,
 		APIMetricsEnabled:            true,
-		HTTPPort:                     9650,
+		HTTPPort:                     9850,
 		HTTPTLSEnabled:               false,
 		HTTPTLSCertFile:              "",
 		HTTPTLSKeyFile:               "",
@@ -171,7 +171,7 @@ func DefaultFlags() Flags {
 		SnowRogueCommitThreshold:     10,
 		P2PTLSEnabled:                true,
 		StakingTLSEnabled:            false,
-		StakingPort:                  9651,
+		StakingPort:                  9851,
 		StakingTLSKeyFile:            "",
 		StakingTLSCertFile:           "",
 	}
