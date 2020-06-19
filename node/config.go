@@ -176,7 +176,7 @@ func DefaultFlags() Flags {
 		SnowRogueCommitThreshold:     10,
 		P2PTLSEnabled:                true,
 		StakingTLSEnabled:            false,
-		StakingPort:                  9651,
+		StakingPort:                  5001,
 		StakingTLSKeyFile:            "",
 		StakingTLSCertFile:           "",
 	}

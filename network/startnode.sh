@@ -9,7 +9,7 @@ NAME=""
 
 # Required flag defaults
 H_PORT="9650"
-S_PORT="9651"
+S_PORT="5001"
 
 # Process flags
 FLAGS=""
